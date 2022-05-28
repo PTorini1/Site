@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Diário Geral</title>
+    <style>
+        /*Cor do corpo do site*/ 
+        body {
+            background: linear-gradient(azure, white);
+        }
+
+        /*Alinhamentos na parte principal*/
+        main {
+            align-content: center;
+            text-align: center;
+        }
+
+        /*Alinhamento de textos naos inputs da lista de presença*/
+        div.RelatorioFinal {
+            text-align: center;
+        }
+
+        /*Configurações de fundo*/
+        div.Main {
+            display: inline-block;
+            width: 1000px;
+            background-color: lightgray;
+            border-radius: 15px;
+        }
+
+        /*Formatação de texto em negrito para labels*/
+        label {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- Cabeçalho -->
+        <div class="w3-top" style="display:inline-flex">
+            <div class="w3-bar w3-black w3-card" style="display:inline-flex">
+                <div style="display:inline-flex"><img height="55px" width="100px" src="IMG/Home/DiarioDeClasseLogo.png"></div>
+                <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
+                    href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i
+                        class="fa fa-bars"></i></a>
+                <a href="Index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+                <a href="ConteúdoFormativo.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Contéudo
+                    Formativo</a>
+                <a href="DiarioGeral.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Diário Geral</a>
+                <a href="ListaPresença.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Lista de Presença</a>
+                <a href="FrequênciaNotas.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Frequência e
+                    Notas</a>
+                <a href="Index.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Sair</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteúdo da Página -->
+    <div class="w3-content" style="max-width:2000px;margin-top:46px">
+        <main>
+            <div class="Main" style="margin-top: 30px">
+                <h3><strong>Diário Geral</strong></h3>
+                <section style="display:inline-flex;">
+                    <div>
+                        <label style="width:100%">Turma</label><br />
+                        <input class="form" type="text" maxlenght="80" placeholder="M1DSI" style="width:300px">
+                        <br>
+                    </div>
+                    <!--Opções de curso para o professor escolher-->
+                    <div style="margin-left: 10px;">
+                        <label style="width:100%">Curso</label><br />
+                        <select name="curso" id="curso" style="height:56%; width: 300px">
+                            <option>-</option>
+                            <option>Automação Industrial</option>
+                            <option>Desenvolvimento de Sistemas</option>
+                            <option>Elétrica de Manutentação</option>
+                            <option>Mecânica de Manutentação</option>
+                        </select>
+                        <br>
+                    </div>
+                    <!--Input referente a data do curso-->
+                    <div style="margin-left: 10px;">
+                        <label style="width:100%">Data de Início</label><br />
+                        <input class="form" type="date" maxlenght="80" style="width:300px">
+                        <br>
+                    </div>
+                </section>
+                <br>
+                <!--Inputs referentes a informoções do curso-->
+                <section style="display:inline-flex;">
+                    <div>
+                        <label style="width:100%">Docentes</label><br />
+                        <input class="form" type="text" maxlenght="80" placeholder="Mayara Ferreira"
+                            style="width:300px">
+                        <br>
+                    </div>
+                    <div style="margin-left: 10px;">
+                        <label style="width:100%">Horas Realizadas</label><br />
+                        <input class="form" type="text" maxlenght="80" placeholder="120h" style="width:300px">
+                        <br>
+                    </div>
+                    <div style="margin-left: 10px;">
+                        <label style="width:100%">Previsão de término</label><br />
+                        <input class="form" type="date" maxlenght="80" placeholder="30/06/2022" style="width:300px">
+                        <br>
+                    </div>
+                </section>
+
+                <h4>Dia da semana e horário</h4><br>
+                <!--Seção sobre dias e horários do curso-->
+                <section style="display:inline-flex; margin-left: 70px;">
+                    <div style="width:15%">
+                        <input class="form" type="text" maxlenght="3" placeholder="Seg">
+                        <br>
+                        <input class="form" type="text" maxlenght="3" placeholder="Ter">
+                        <br>
+                        <input class="form" type="text" maxlenght="3" placeholder="Qua">
+                        <br>
+                        <input class="form" type="text" maxlenght="3" placeholder="Qui">
+                        <br>
+                        <input class="form" type="text" maxlenght="3" placeholder="Sex">
+                        <br>
+                        <input class="form" type="text" maxlenght="3" placeholder="Sab">
+                        <br>
+                    </div>
+                    <div style="margin-left: 10px;">
+                        <input class="form" type="text" maxlenght="80" placeholder="">
+                        <br>
+                        <input class="form" type="text" maxlenght="80" placeholder="">
+                        <br>
+                        <input class="form" type="text" maxlenght="80" placeholder="">
+                        <br>
+                        <input class="form" type="text" maxlenght="80" placeholder="">
+                        <br>
+                        <input class="form" type="text" maxlenght="80" placeholder="">
+                        <br>
+                        <input class="form" type="text" maxlenght="80" placeholder="">
+                        <br>
+                    </div>
+                    <div style="height: 100%;margin-left: 75px;">
+                        <div>
+                            <label style="width:100%">Horas Realizadas</label><br />
+                            <input class="form" type="text" maxlenght="80" placeholder="" style="width:400px">
+                            <br>
+                        </div>
+                        <div>
+                            <label style="width:100%">Data Real de Término</label><br />
+                            <input class="form" type="date" maxlenght="80" placeholder="" style="width:100%">
+                            <br>
+                        </div>
+                        <div>
+                            <label style="width:100%">Responsável Pelo Curso</label><br />
+                            <input class="form" type="text" maxlenght="80" placeholder="" style="width:100%">
+                            <br>
+                        </div>
+                    </div>
+                </section>
+
+                <h4>Relatório Final</h4><br>
+                <section style="text-align:center">
+                    <!--Legenda do Relatório Final-->
+                    <div>
+                        <label>Resultado Final </label>
+                        <label>C = Certificado </label>
+                        <label>N = Não Certificado </label>
+                        <label>E = Evadido </label>
+                        <label>T = Transferido </label><br>
+                    </div>
+                    <!--Div sobre o número dos alunos-->
+                    <div style="display:inline-flex;">
+                        <div class="RelatorioFinal">
+                            <label>Nº Aluno</label><br>
+                            <input type="textbox" style="width:80px" placeholder="1"><br>
+                            <input type="textbox" style="width:80px" placeholder="2"><br>
+                            <input type="textbox" style="width:80px" placeholder="3"><br>
+                            <input type="textbox" style="width:80px" placeholder="4"><br>
+                            <input type="textbox" style="width:80px" placeholder="5"><br>
+                            <input type="textbox" style="width:80px" placeholder="6"><br>
+                            <input type="textbox" style="width:80px" placeholder="7"><br>
+                            <input type="textbox" style="width:80px" placeholder="8"><br>
+                            <input type="textbox" style="width:80px" placeholder="9"><br>
+                            <input type="textbox" style="width:80px" placeholder="10"><br>
+                            <input type="textbox" style="width:80px" placeholder="11"><br>
+                            <input type="textbox" style="width:80px" placeholder="12"><br>
+                            <input type="textbox" style="width:80px" placeholder="13"><br>
+                            <input type="textbox" style="width:80px" placeholder="14"><br>
+                            <input type="textbox" style="width:80px" placeholder="15"><br>
+                            <input type="textbox" style="width:80px" placeholder="16"><br>
+                            <input type="textbox" style="width:80px" placeholder="17"><br>
+                            <input type="textbox" style="width:80px" placeholder="18"><br>
+                            <input type="textbox" style="width:80px" placeholder="19"><br>
+                            <input type="textbox" style="width:80px" placeholder="20"><br>
+                            <input type="textbox" style="width:80px" placeholder="21"><br>
+                            <input type="textbox" style="width:80px" placeholder="22"><br>
+                            <input type="textbox" style="width:80px" placeholder="23"><br>
+                            <input type="textbox" style="width:80px" placeholder="24"><br>
+                            <input type="textbox" style="width:80px" placeholder="25"><br>
+                            <input type="textbox" style="width:80px" placeholder="26"><br>
+                            <input type="textbox" style="width:80px" placeholder="27"><br>
+                            <input type="textbox" style="width:80px" placeholder="28"><br>
+                            <input type="textbox" style="width:80px" placeholder="29"><br>
+                            <input type="textbox" style="width:80px" placeholder="30"><br>
+                            <input type="textbox" style="width:80px" placeholder="31"><br>
+                            <input type="textbox" style="width:80px" placeholder="32"><br>
+                            <input type="textbox" style="width:80px" placeholder="33"><br>
+                            <input type="textbox" style="width:80px" placeholder="34"><br>
+                        </div>
+                        
+                        <!--Div sobre as faltas dos alunos-->
+                        <div class="RelatorioFinal">
+                            <label>Faltas</label><br>
+                            <input type="textbox" style="width:80px" placeholder="1"><br>
+                            <input type="textbox" style="width:80px" placeholder="2"><br>
+                            <input type="textbox" style="width:80px" placeholder="3"><br>
+                            <input type="textbox" style="width:80px" placeholder="4"><br>
+                            <input type="textbox" style="width:80px" placeholder="5"><br>
+                            <input type="textbox" style="width:80px" placeholder="6"><br>
+                            <input type="textbox" style="width:80px" placeholder="7"><br>
+                            <input type="textbox" style="width:80px" placeholder="8"><br>
+                            <input type="textbox" style="width:80px" placeholder="9"><br>
+                            <input type="textbox" style="width:80px" placeholder="10"><br>
+                            <input type="textbox" style="width:80px" placeholder="1"><br>
+                            <input type="textbox" style="width:80px" placeholder="2"><br>
+                            <input type="textbox" style="width:80px" placeholder="3"><br>
+                            <input type="textbox" style="width:80px" placeholder="4"><br>
+                            <input type="textbox" style="width:80px" placeholder="5"><br>
+                            <input type="textbox" style="width:80px" placeholder="6"><br>
+                            <input type="textbox" style="width:80px" placeholder="7"><br>
+                            <input type="textbox" style="width:80px" placeholder="8"><br>
+                            <input type="textbox" style="width:80px" placeholder="0"><br>
+                            <input type="textbox" style="width:80px" placeholder="0"><br>
+                            <input type="textbox" style="width:80px" placeholder="1"><br>
+                            <input type="textbox" style="width:80px" placeholder="2"><br>
+                            <input type="textbox" style="width:80px" placeholder="3"><br>
+                            <input type="textbox" style="width:80px" placeholder="4"><br>
+                            <input type="textbox" style="width:80px" placeholder="5"><br>
+                            <input type="textbox" style="width:80px" placeholder="6"><br>
+                            <input type="textbox" style="width:80px" placeholder="7"><br>
+                            <input type="textbox" style="width:80px" placeholder="8"><br>
+                            <input type="textbox" style="width:80px" placeholder="9"><br>
+                            <input type="textbox" style="width:80px" placeholder="0"><br>
+                            <input type="textbox" style="width:80px" placeholder="1"><br>
+                            <input type="textbox" style="width:80px" placeholder="2"><br>
+                            <input type="textbox" style="width:80px" placeholder="3"><br>
+                            <input type="textbox" style="width:80px" placeholder="4"><br>
+                        </div>
+
+                        <!--Div sobre as notas dos alunos-->
+                        <div class="RelatorioFinal">
+                            <label>Notas</label><br>
+                            <input type="textbox" style="width:80px" placeholder="100"><br>
+                            <input type="textbox" style="width:80px" placeholder="92"><br>
+                            <input type="textbox" style="width:80px" placeholder="83"><br>
+                            <input type="textbox" style="width:80px" placeholder="74"><br>
+                            <input type="textbox" style="width:80px" placeholder="65"><br>
+                            <input type="textbox" style="width:80px" placeholder="56"><br>
+                            <input type="textbox" style="width:80px" placeholder="47"><br>
+                            <input type="textbox" style="width:80px" placeholder="98"><br>
+                            <input type="textbox" style="width:80px" placeholder="89"><br>
+                            <input type="textbox" style="width:80px" placeholder="100"><br>
+                            <input type="textbox" style="width:80px" placeholder="100"><br>
+                            <input type="textbox" style="width:80px" placeholder="52"><br>
+                            <input type="textbox" style="width:80px" placeholder="63"><br>
+                            <input type="textbox" style="width:80px" placeholder="74"><br>
+                            <input type="textbox" style="width:80px" placeholder="85"><br>
+                            <input type="textbox" style="width:80px" placeholder="96"><br>
+                            <input type="textbox" style="width:80px" placeholder="97"><br>
+                            <input type="textbox" style="width:80px" placeholder="88"><br>
+                            <input type="textbox" style="width:80px" placeholder="100"><br>
+                            <input type="textbox" style="width:80px" placeholder="90"><br>
+                            <input type="textbox" style="width:80px" placeholder="100"><br>
+                            <input type="textbox" style="width:80px" placeholder="82"><br>
+                            <input type="textbox" style="width:80px" placeholder="73"><br>
+                            <input type="textbox" style="width:80px" placeholder="49"><br>
+                            <input type="textbox" style="width:80px" placeholder="95"><br>
+                            <input type="textbox" style="width:80px" placeholder="86"><br>
+                            <input type="textbox" style="width:80px" placeholder="77"><br>
+                            <input type="textbox" style="width:80px" placeholder="68"><br>
+                            <input type="textbox" style="width:80px" placeholder="99"><br>
+                            <input type="textbox" style="width:80px" placeholder="100"><br>
+                            <input type="textbox" style="width:80px" placeholder="91"><br>
+                            <input type="textbox" style="width:80px" placeholder="92"><br>
+                            <input type="textbox" style="width:80px" placeholder="83"><br>
+                            <input type="textbox" style="width:80px" placeholder="84"><br>
+                        </div>
+
+                        <!--Div sobre o resultado final dos alunos-->
+                        <div class="RelatorioFinal">
+                            <label>Resultado</label><br>
+                            <input type="textbox" style="width:80px" placeholder="C"><br>
+                            <input type="textbox" style="width:80px" placeholder="C"><br>
+                            <input type="textbox" style="width:80px" placeholder="C"><br>
+                            <input type="textbox" style="width:80px" placeholder="C"><br>
+                            <input type="textbox" style="width:80px" placeholder="C"><br>
+                            <input type="textbox" style="width:80px" placeholder="C"><br>
+                            <input type="textbox" style="width:80px" placeholder="N"><br>
+                            <input type="textbox" style="width:80px" placeholder="C"><br>
+                            <input type="textbox" style="width:80px" placeholder="C"><br>
+                            <input type="textbox" style="width:80px" placeholder="C"><br>
+                            <input type="textbox" style="width:80px" placeholder="C"><br>
+                            <input type="textbox" style="width:80px" placeholder="C"><br>
+                            <input type="textbox" style="width:80px" placeholder="C"><br>
+                            <input type="textbox" style="width:80px" placeholder="C"><br>
+                            <input type="textbox" style="width:80px" placeholder="C"><br>
+                            <input type="textbox" style="width:80px" placeholder="C"><br>
+                            <input type="textbox" style="width:80px" placeholder="C"><br>
+                            <input type="textbox" style="width:80px" placeholder="C"><br>
+                            <input type="textbox" style="width:80px" placeholder="C"><br>
+                            <input type="textbox" style="width:80px" placeholder="C"><br>
+                            <input type="textbox" style="width:80px" placeholder="C"><br>
+                            <input type="textbox" style="width:80px" placeholder="C"><br>
+                            <input type="textbox" style="width:80px" placeholder="C"><br>
+                            <input type="textbox" style="width:80px" placeholder="C"><br>
+                            <input type="textbox" style="width:80px" placeholder="C"><br>
+                            <input type="textbox" style="width:80px" placeholder="C"><br>
+                            <input type="textbox" style="width:80px" placeholder="C"><br>
+                            <input type="textbox" style="width:80px" placeholder="C"><br>
+                            <input type="textbox" style="width:80px" placeholder="C"><br>
+                            <input type="textbox" style="width:80px" placeholder="C"><br>
+                            <input type="textbox" style="width:80px" placeholder="C"><br>
+                            <input type="textbox" style="width:80px" placeholder="C"><br>
+                            <input type="textbox" style="width:80px" placeholder="C"><br>
+                            <input type="textbox" style="width:80px" placeholder="C"><br>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <!--Botão de impressão com seu script de impressão quando é clicado-->
+                    <div>
+                        <br />
+                        <button onclick="print()" style="margin-bottom: 10px;">Imprimir Relatório</button>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <!--Rodapé indicando quem fez aquela página-->
+        <footer
+            style="background-color: lightgray; position: absolute; width: 100%; text-align: center; margin-top: 10px;">
+            <p>©Copyright - Direitos Reservados Predo</p>
+        </footer>
+    </div>
+</body>
+
+</html>

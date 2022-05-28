@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>   <!-- head padrão com os links de estilização para que site funcione -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/frequencia.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Frequência e notas</title>   <!-- Titulo da pagina -->
+
+
+</head>
+
+<header>
+    <!-- barra de navegação do topo: onde pode acessar as outras paginas -->
+    <div class="w3-top" style="display:inline-flex">
+        <div class="w3-bar w3-black w3-card" style="display:inline-flex">
+            <div style="display:inline-flex"><img height="50px" width="100px" src="IMG/Home/DiarioDeClasseLogo.png"></div>
+            <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
+                href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i
+                    class="fa fa-bars"></i></a>
+            <a href="FrequênciaNotas.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Frequência e
+                Notas</a>
+            <a href="Index.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Sair</a>
+        </div>
+    </div>
+</header>
+
+<body>
+
+    <div class="center">   <!-- a div que segura a ficha -->
+        <table>   <!-- a ficha foi organizada por tabela -->
+            <h2>Notas</h2>
+
+            <tr>   <!-- linha que separa as colunas por seus respectivos dados -->
+                <td>
+                    <p class="estilo">Numero</p>
+                </td>
+                <td>
+                    <p class="estilo">Nome do Aluno:</p>
+                </td>
+                <td>
+                    <p class="estilo">N° de Matricula:</p>
+                </td>
+                <td>
+                    <p class="estilo">Data de Nascimento:</p>
+                </td>
+                <td>
+                    <p class="estilo">Frequência (%):</p>
+                </td>
+                <td>
+                    <p class="estilo">Faltas</p>
+                </td>
+                <td>
+                    <p class="estilo">nota 1</p>
+                </td>
+                <td>
+                    <p class="estilo">nota 2</p>
+                </td>
+                <td>
+                    <p class="estilo">nota 3</p>
+                </td>
+                <td>
+                    <p class="estilo">nota 4</p>
+                </td>
+                <td>
+                    <p class="estilo">Situação Final</p>
+                </td>
+            </tr>
+
+            <tr>   <!-- Linha com os imputs da finha, que foi replicada 30 vezes -->
+                <td class="left"><input class="number" type="text" value="1" disabled></td>  <!-- numero da linha  -->
+                <td><input class="name" placeholder="Atribuir nome do aluno" type="text"></td>   <!-- nome do aluno  -->
+                <td><input class="matr" value="0000000-X" disabled type="text"></td>   <!-- n° de matricula -->
+                <td><input type="date"></td>   <!-- data de nascimento -->
+                <td><input class="small" type="number" min="0" max="100"></td>   <!-- barra de frequencia, que vai de 0 a 100% -->
+                <td><input class="small" type="number" maxlength="3"></td>   <!-- contador de faltas -->
+                <td><input class="small" type="number" min="0" max="100"></td>   <!-- nota 1, travado entre 0 a 100 -->
+                <td><input class="small" type="number" min="0" max="100"></td>  <!-- nota 2, travado entre 0 a 100 -->
+                <td><input class="small" type="number" min="0" max="100"></td>  <!-- nota 3, travado entre 0 a 100 -->
+                <td><input class="small" type="number" min="0" max="100"></td>  <!-- nota 4, travado entre 0 a 100 -->
+                <td><select>   <!-- seletor, que mostra se foi ou não aprovado -->
+                        <option>-</option>
+                        <option>Aprovado</option>
+                        <option>Reprovado</option>
+                </td>
+            </tr>
+
+            <tr>   <!-- ultima linha, com apenas o botão de salvar registro -->
+                <td></td>   <!-- vários "td" para que o IMPUT fique na ultima coluna -->
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><br>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>  
+        </table>
+        <button onclick="print()">Imprimir Ficha</button></td></tr><!-- botão com a função de imprimir (funcionando) -->
+        <a href="PortalAluno.html"><button>Voltar</button></td> </a>  <!-- input de salvar, não salva realmente, mas possui um script que exibe um alerta como se tivesse salvado mesmo, para não ficar apenas ilustrativo -->
+    </div>
+
+    <footer style="background-color: lightgray; position: absolute; width: 100%; text-align: center;">   <!-- rodapé, simples pois essa parte do site não necessita de um footer bem elaborado -->
+        <p>©Copyright - Direitos Reservados Luiza</p>   <!-- nome de que fez e avisos de copyright -->
+    </footer>
+
+</body>
+
+</html>

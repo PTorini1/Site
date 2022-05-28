@@ -1,0 +1,6 @@
+/*Formatação de Header e Footer*/
+@media  screen and (max-width:1000px) {
+    img.carrossel{
+        width: 100% !important;
+    }
+}

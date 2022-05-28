@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Conteúdo Formativo</title>
+    <!--Estilização da página dentro do próprio HTML usando a tag <style>-->
+    <style>
+        /*Gradiente de fundo da página*/
+        body{
+        background-image: linear-gradient(azure, white);
+        }
+        /*--Alinhamento das tags da classe .estilo1*/
+        .estilo1{
+            align-items: center;
+            text-align: center;
+            margin: 0 auto;
+        }
+        /*Estilização e alinhamento dos items das tags <table> linkadas com a classe .estilo1--*/
+        table.estilo1{
+            background-color: rgb(240,240,240);
+            align-items: center;
+            text-align: center;
+            margin: 0 auto;
+        }
+        /*Estilização e alinhamento das tags <a> linkadas com a classe .estilo3--*/
+        a.estilo3{
+            font-size: 55px;
+            font-family: 'Times New Roman', Times, serif;
+            align-items: center;
+            margin: 0 auto;
+            text-align: center;
+        }
+        /*Estilização e alinhamento das tags <a> linkadas com a classe .estilo1--*/
+        div.estilo1{
+            background-color: rgb(240,240,240);
+            border-radius: 15px;
+            width: 1700px;
+            align-items: center;
+            text-align: center;
+            margin-top: 65px;
+        }
+        /*Estilização e alinhamento das tags <a> linkadas com a classe .estilo2--*/
+        div.estilo2{
+            background-color: rgb(240,240,240);
+            border-radius: 15px;
+            width: 750px;
+            align-items: center;
+            text-align: center;
+            margin: 0 auto;
+        }
+        /*Estilização das tags <input> linkadas com o id #Conteudo*/
+        input#Conteudo{
+            width: 700px;
+            height: 50px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 35px;
+            text-align: center;
+        }
+        /*Estilização das tags <select> linkadas com o id #Conteudo*/
+        select#Conteudo{
+            width: 740px;
+            height: 54.5px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 30px;
+            text-align: center;
+        }
+        /*Estilização das tags <input> linkadas com o id #Data*/
+        input#Data  {
+            margin-left: 14px;
+            width: 250px;
+            height: 50px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 35px;
+            text-align: center;
+        }
+        /*Estilização das tags <input> linkadas com o id #Data2--*/
+        input#Data2  {
+            width: 150px;
+            height: 50px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 35px;
+            text-align: center;
+        }
+        /*Estilização e posicionamento dos textos*/
+        input#Turma{
+            margin-left: 14px;
+            width: 220px;
+            height: 50px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 30px;
+            text-align: center;
+        }
+        /*Estilização das fonte das tags  <a> linkadas com a classe .estilo2--*/
+        a.estilo2{
+            font-size: 35px;
+            font-family: 'Times New Roman', Times, serif
+        }
+        /*Estilização da tag <button> linkadas com o id #Relatorios*/
+        button#Relatorios{
+            width: 650px;
+            height: auto;
+            font-size: 30px;
+            background-color: rgb(215,215,215);
+            color: rgb(0, 0, 0);
+            border-color: rgb(215,215,215);
+        }
+        /*Hover do butão de relatorios que faz a cor mudar com o mouse encima--*/
+       #Relatorios:hover{
+        color:white;
+        background-color: rgb(50, 50, 50);
+        border-color: rgb(50, 50, 50);
+        transition: background-color 0.85s,border-color 0.85s,font-color 0.85s;
+       
+       }
+        
+
+
+    </style>
+</head>
+<!--Cabeçalho da página-->
+<body id="Body">
+    <header>
+        <!-- Cabeçalho -->
+        <div class="w3-top" style="display:inline-flex">
+            <div class="w3-bar w3-black w3-card" style="display:inline-flex">
+                <div style="display:inline-flex"><img height="55px" width="100px" src="IMG/Home/DiarioDeClasseLogo.png"></div>
+                <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
+                    href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i
+                        class="fa fa-bars"></i></a>
+                <a href="Index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+                <a href="ConteúdoFormativo.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Contéudo
+                    Formativo</a>
+                <a href="DiarioGeral.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Diário Geral</a>
+                <a href="ListaPresença.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Lista de Presença</a>
+                <a href="FrequênciaNotas.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Frequência e
+                    Notas</a>
+                <a href="Index.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Sair</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteúdo da página -->
+    <div class="w3-content" style="max-width:2000px;margin-top:46px">
+    <main>
+    <br><br>
+    <!--Criação de uma div chamada Inserir Conteúdo Formativo para organizar o site-->
+    <div class="estilo1">
+    <a class="estilo3">Inserir Conteúdo Formativo</a>
+    <br><br><br>
+    <!--Criação de uma table pra melhor organização utilizando duas tags <tr> pra criação de linhas e seis tags <td> para criação de colunas com um select para seleção da unidade curricular-->
+    <table class="estilo1">
+        <tr>
+            <td><a class="estilo2">Turma</a></td> 
+            <td><a class="estilo2">Titulo do Curso</a></td> 
+            <td><a class="estilo2">Unidade Curricular</a></td>
+        </tr>
+        <tr>
+    <!--Criação de inputs e um select com 11 opções relacionadas a Unidade Curricular-->
+            <td><input id="Turma" type="text" placeholder="M1DSI"></td>
+            <td><input id="Conteudo" type="text" placeholder="Desenvolvimento de Sistemas"></td>
+            <td><select id="Conteudo">
+                <option>Fundamentos da Programação Orientada a Objetos</option>
+                <option>Sistemas Operacionais</option>
+                <option>Hardwares e Redes</option>
+                <option>Linguagem de Marcação</option>
+                <option>Programação Web Front-End</option>
+                <option>Banco de Dados</option>
+                <option>Programação Web Back-End</option>
+                <option>Interface para Dispositivos Móveis</option>
+                <option>Programação para Dispositivos Móveis</option>
+                <option>Requisitos e Modelagem de Software</option>
+                <option>Testes de Software</option>
+                <option>Projetos</option>
+                </select>
+            </td>
+        </tr> 
+        </table>
+    <br><br>
+        <!--Criação de uma table pra melhor organização utilizando duas tags <tr> pra criação de linhas e seis tags <td> para criação de colunas e com um select para seleção do conteúdo-->
+    <table class="estilo1">   
+        <tr>
+            <td><a class="estilo2">Data</a></td> 
+            <td><a class="estilo2">Hora</a></td> 
+            <td><a class="estilo2">Conteúdo Formativo</a></td>  
+        </tr>
+        <tr>
+        <!--Criação de inputs e um select com 5 opções relacionadas ao Conteúdo Formativo-->
+            <td><input id="Data" type="date"></td>
+            <td><input id="Data2" type="time"></td>
+            <td><select id="Conteudo">
+                    <option>Linguagem de Programação</option>
+                    <option>Lógica de Programação Orientada a Objetos</option>
+                    <option>Programação Orientada a Objetos</option>
+                    <option>Manipulação de Arquivos</option>
+                    <option>Controle de Versões</option>
+                </select></td>    
+        </tr>   
+    </table> 
+    <br><br>
+    </div>
+    <br><br><br>
+    <!--Criação de uma div chamada Alterar Conteúdo Formativo para organizar o site-->
+    <div class="estilo1">
+    <!--Criação de uma table pra melhor organização utilizando duas tags <tr> pra criação de linhas e seis tags <td> para criação de colunas e com um select para alteração da unidade curricular-->
+        <table class="estilo1">
+            <tr>
+                <a class="estilo3">Alterar Conteúdo Formativo</a>
+            </tr>
+            <br><br>
+            <tr>
+                <td><a class="estilo2">Turma</a></td> 
+                <td><a class="estilo2">Titulo do Curso</a></td> 
+                <td><a class="estilo2">Unidade Curricular</a></td>
+            </tr>
+            <tr>
+     <!--Criação de inputs e um select com 11 opções relacionadas a Unidade Curricular-->
+                <td><input id="Turma" type="text" placeholder="M1DSI"></td>
+                <td><input id="Conteudo" type="text" placeholder="Desenvolvimento de Sistemas"></td>
+                <td><select id="Conteudo">
+                    <option>Fundamentos da Programação Orientada a Objetos</option>
+                    <option>Sistemas Operacionais</option>
+                    <option>Hardwares e Redes</option>
+                    <option>Linguagem de Marcação</option>
+                    <option>Programação Web Front-End</option>
+                    <option>Banco de Dados</option>
+                    <option>Programação Web Back-End</option>
+                    <option>Interface para Dispositivos Móveis</option>
+                    <option>Programação para Dispositivos Móveis</option>
+                    <option>Requisitos e Modelagem de Software</option>
+                    <option>Testes de Software</option>
+                    <option>Projetos</option>
+                    </select>
+                </td>
+            </tr> 
+        </table>
+        <!--Criação de uma table pra melhor organização utilizando duas tags <tr> pra criação de linhas e seis tags <td> para criação de colunas e com um select para alteração do conteúdo-->
+        <table class="estilo1">
+        <tr>
+            <td><a class="estilo2">Data</a></td> 
+            <td><a class="estilo2">Hora</a></td> 
+            <td><a class="estilo2">Conteúdo Formativo</a></td>  
+        </tr>
+        <br><br><br>
+        <tr>
+        <!--Criação de inputs e um select com 5 opções relacionadas ao Conteúdo Formativo-->
+            <td><input id="Data" type="date"></td>
+            <td><input id="Data2" type="time"></td>
+            <td><select id="Conteudo">
+                    <option>Linguagem de Programação</option>
+                    <option>Lógica de Programação Orientada a Objetos</option>
+                    <option>Programação Orientada a Objetos</option>
+                    <option>Manipulação de Arquivos</option>
+                    <option>Controle de Versões</option>
+                </select></td>
+        </tr>   
+    </table>
+    <br><br> 
+    </div>
+    <br><br><br>
+     <!--Criação de uma div para organizar o botão Salvar e Visualizar Relatório de Conteúdo-->
+    <div class="estilo2">
+        <br><br>  
+        <a href="https://docs.google.com/document/d/1fQeFvQsiCyT5Go1nVGqFMcK6Ryy6LuEg5r-OEWgmZsU/edit?usp=sharing"><button id="Relatorios">Salvar e Visualizar Relatório de Conteúdo</button></a></td>  
+        <br><br><br> 
+    </div>
+    <br><br>
+    </main>
+    <!--Rodapé--> 
+    <footer style="background-color: lightgray; position: absolute; width: 100%; text-align: center;">
+        <p>©Copyright - Direitos Reservados Luan Pereira vulgo Luizinho</p>
+    </footer>
+</body>
+</html>

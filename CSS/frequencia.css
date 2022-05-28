@@ -1,0 +1,94 @@
+body {
+    background-image: linear-gradientazure, azure white;
+}
+
+div.center {
+    text-align: center;
+    background-color: rgb(231, 231, 231);
+    width: 1150px;
+    margin: 75px auto;
+    border-radius: 15px;
+    padding: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+p.estilo {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+img.icon {
+    width: 25px;
+    height: 25px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+input.search {
+    border-radius: 25px;
+    width: 200px;
+    padding: 5px;
+    border-color: rgba(255, 0, 0, 0.171);
+}
+
+input.search:hover {
+    /* pseudo classe */
+    border-color: red;
+    transition:  0.05s;
+
+}
+
+input.last {
+    width: 100%;
+    padding: 7px;
+    background-color: rgb(212, 3, 3);
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+input.last:active {
+    /* pseudo classe */  
+background-color: rgba(255, 101, 101, 0.719);
+cursor: pointer;
+}
+
+buttom.print {
+    width: 100%;
+    padding: 7px;
+    background-color: rgb(212, 3, 3);
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+buttom.print:active {
+    /* pseudo classe */  
+background-color: rgba(255, 101, 101, 0.719);
+cursor: pointer;
+}
+
+input.number {
+    width: 30px;
+    text-align: center;
+}
+
+td.left {
+    width: 0px;
+}
+
+input.name {
+    width: 120%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+input.matr {
+    width: 50%;
+    text-align: center;
+}
+
+input.small {
+    width: 50px;
+}

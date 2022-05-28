@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <style>
+        /*Formação de fonte e cor do corpo do site*/
+        body {
+            font-family: "Lato", sans-serif;
+            background: linear-gradient(azure, white);
+        }
+
+        /*Formação do Bootstrap para o carrossel inicial*/
+        .mySlides {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Menu pego no Bootstrap -->
+    <div class="w3-top" style="display:inline-flex">
+        <div class="w3-bar w3-black w3-card" style="display:inline-flex">
+            <div style="display:inline-flex"><img height="55px" width="100px" src="IMG/Home/DiarioDeClasseLogo.png"></div>
+            <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
+                href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i
+                    class="fa fa-bars"></i></a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+            <a href="#home" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CADASTRO</a>
+            <a href="#contato" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTATO</a>
+            <div class="w3-dropdown-hover w3-hide-small">
+                <button class="w3-padding-large w3-button" title="More">MAIS <i class="fa fa-caret-down"></i></button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="#" class="w3-bar-item w3-button">CURSOS</a>
+                    <a href="#localizacao" class="w3-bar-item w3-button">LOCALIZAÇÃO</a>
+                    <a href="#redes" class="w3-bar-item w3-button">REDES SOCIAIS</a>
+                </div>
+            </div>
+            <input type="textbox" placeholder="Faça sua pesquisa"style="width:50%; height: 90%">
+            <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i
+                    class="fa fa-search"></i></a>
+        </div>
+    </div>
+
+    <!-- Menu feito para telas pequenas -->
+    <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+        <a href="#home" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">HOME</a>
+        <a href="#cadastro" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CADASTRO</a>
+        <a href="#contatos" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTATO</a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MAIS</a>
+    </div>
+
+    <!-- Formatação de tamanho da página -->
+    <div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+        <!-- Carrosel Automático do Boostrap -->
+        <div class="mySlides w3-display-container w3-center">
+            <img class="carrossel" src="IMG/Home/senaiDiadema.jpg"
+                style="width:70%; height: 70%; object-fit: cover; position: center;">
+            <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32">
+                <h3>Senai Diadema</h3>
+                <p><b>Desde 1980 mudando vidas</b></p>
+            </div>
+        </div>
+        <div class="mySlides w3-display-container w3-center">
+            <img class="carrossel" src="IMG/Home/cursosSenai.jpg"
+                style="width:70%; height: 70%; object-fit: cover; position: center;">
+            <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32">
+                <h3>Cursos Diversos</h3>
+                <p><b>Temos diversos cursos e o melhor é o de Desenvolvimento Sistemas</b></p>
+            </div>
+        </div>
+        <div class="mySlides w3-display-container w3-center">
+            <img class="carrossel" src="IMG/Home/senai.jpg"
+                style="width:70%; height: 70%; object-fit: cover; position: center;">
+            <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32">
+                <h3>SENAI</h3>
+                <p><b>Capacitando incompetentes para a indústria</b></p>
+            </div>
+        </div>
+
+        <!-- Seção para entrar no Diário de Classe -->
+        <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="home">
+            <h2 class="w3-wide">Diário de Classe</h2>
+            <p class="w3-opacity"><i>Faça seu cadastro como aluno ou professor</i></p>
+            <p style="text-align: center">Aqui você pode consultar suas notas e frequência. Se for
+                professor, poderá ter acesso ao diário de classe de todas as turmas e analisar notas, frequências,
+                planos de curso e relatórios de rendimento</p>
+            <div class="w3-row w3-padding-32" style="display: inline-flex;">
+                <div>
+                    <a href="AlunosCadastro.html" style="text-decoration: none"><img src="IMG/Home/aluno2.png" class="w3-round w3-margin-bottom" alt="Random Name"
+                        style="width:70%">
+                    <p>Aluno</p></a>
+                </div>
+                <div>
+                    <a href="ProfessoresCadastro.html" style="text-decoration: none"><img src="IMG/Home/professor2.png" class="w3-round w3-margin-bottom" alt="Random Name"
+                        style="width:64%">
+                    <p>Professor</p></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção para entrar em contato conosco -->
+        <div class="w3-container w3-content w3-padding-64" style="max-width:800px; background-color: lightgray;" id="contato">
+            <h2 class="w3-wide w3-center">CONTATO</h2>
+            <p class="w3-opacity w3-center"><i>Deixe sua opinião sobre o site</i></p>
+            <div class="w3-row w3-padding-32">
+                <div class="w3-col m6 w3-large w3-margin-bottom">
+                    <i class="fa fa-map-marker" style="width:30px"></i> Diadema, SP<br>
+                    <i class="fa fa-phone" style="width:30px"></i> Telefone: (11) 4070-8950<br>
+                    <i class="fa fa-envelope" style="width:30px"> </i> Email: senai112@senaisp.edu.br<br>
+                </div>
+                <div class="w3-col m6">
+                    <form action="/action_page.php" target="_blank">
+                        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                            <div class="w3-half">
+                                <input class="w3-input w3-border" type="text" placeholder="Nome" required name="Nome">
+                            </div>
+                            <div class="w3-half">
+                                <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+                            </div>
+                        </div>
+                        <input class="w3-input w3-border" type="text" placeholder="Mensagem" required name="Memsagem">
+                        <button class="w3-button w3-black w3-section w3-right" type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Localização do Senai -->
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="localizacao">
+        <h2 class="w3-wide w3-center">Nossa Localização</h2>
+    </div>
+    <div style="margin: auto; width: 100%; text-align: center;" >
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14615.581595827984!2d-46.6107051!3d-23.6796984!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfa10a6739d679365!2sManuel%20Garcia%20Filho%20Escola%20Senai!5e0!3m2!1spt-BR!2sbr!4v1652357341042!5m2!1spt-BR!2sbr"
+            width="61%"  height="450" style="border:0; text-align: center;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+
+    <!-- Footer -->
+    <footer id="redes" class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+        <p>Nos siga nas Redes Sociais</p>
+        <a href="https://pt-br.facebook.com/senaidiadema/" target="blank"><i
+                class="fa fa-facebook-official w3-hover-opacity"></i></a>
+        <a href="https://www.instagram.com/senaidiadema/" target="blank"><i
+                class="fa fa-instagram w3-hover-opacity"></i>
+            <a href="https://www.youtube.com/channel/UCLWrOsJcSEQDL6FROWNYKLA/videos?app=desktop&view=0&sort=dd&shelf_id=1"
+                target="blank"><i class="fa fa-youtube w3-hover-opacity"></i></a>
+    </footer>
+
+    <script>
+        // Carrossel Automático - Muda a imagem a cada 4 segundos
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 4000);
+        }
+
+        // Código para alterar tamanho do menu para telas pequenas
+        function myFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+
+        // Quando clicar fora do menu 'Mais' fecha automaticamente
+        var modal = document.getElementById('ticketModal');
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
