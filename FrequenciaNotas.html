@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/frequencia.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Professor - frequência/notas</title>
+
+    
+</head>
+
+<header>
+
+    <div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+    <!-- Navbar -->
+    <div class="w3-top" style="display:inline-flex">
+        <div class="w3-bar w3-black w3-card" style="display:inline-flex">
+            <div style="display:inline-flex"><img height="50px" width="100px" src="IMG/Home/DiarioDeClasseLogo.png"></div>
+            <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
+                href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i
+                    class="fa fa-bars"></i></a>
+            <a href="Index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+            <a href="ConteúdoFormativo.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Contéudo Formativo</a>
+            <a href="DiarioGeral.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Diário Geral</a>
+            <a href="FrequênciaNotas.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Frequência e Notas</a>
+            <a href="Index.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Sair</a>
+        </div>
+    </div>
+    </header>
+
+<body>
+
+    <div class="center">
+        <table>
+            <tr>
+                <td></td>
+                <td>
+                    <p class="estilo">Procurar aluno:</p>
+                </td>
+                <td><input class="search" type="search" placeholder="Pesquisar"> </td>
+                <td>
+                    <p class="estilo">Data do registro:</p>
+                </td>
+                <td><input type="date"></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p class="estilo">Numero</p>
+                </td>
+                <td>
+                    <p class="estilo">Nome do Aluno:</p>
+                </td>
+                <td>
+                    <p class="estilo">Numero de Matricula:</p>
+                </td>
+                <td>
+                    <p class="estilo">Data de Nascimento:</p>
+                </td>
+                <td>
+                    <p class="estilo">Frequência (%):</p>
+                </td>
+                <td>
+                    <p class="estilo">Faltas</p>
+                </td>
+                <td>
+                    <p class="estilo">nota 1</p>
+                </td>
+                <td>
+                    <p class="estilo">nota 2</p>
+                </td>
+                <td>
+                    <p class="estilo">nota 3</p>
+                </td>
+                <td>
+                    <p class="estilo">nota 4</p>
+                </td>
+                <td>
+                    <p class="estilo">Situação Final</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="left"><input class="number" type="text" value="1" disabled></td>
+                <td><input class="name" placeholder="Atribuir nome do aluno" type="text"></td>
+                <td><input class="matr" value="0000000-X" disabled type="text"></td>
+                <td><input type="date"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" maxlength="3"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><select>
+                        <option>-</option>
+                        <option>Aprovado</option>
+                        <option>Reprovado</option>
+                </td>
+            </tr>
+            <tr>
+                <td class="left"><input class="number" type="text" value="2" disabled></td>
+                <td><input class="name" placeholder="Atribuir nome do aluno" type="text"></td>
+                <td><input class="matr" value="0000000-X" disabled type="text"></td>
+                <td><input type="date"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" maxlength="3"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><select>
+                        <option>-</option>
+                        <option>Aprovado</option>
+                        <option>Reprovado</option>
+                </td>
+            </tr>
+            <tr>
+                <td class="left"><input class="number" type="text" value="3" disabled></td>
+                <td><input class="name" placeholder="Atribuir nome do aluno" type="text"></td>
+                <td><input class="matr" value="0000000-X" disabled type="text"></td>
+                <td><input type="date"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" maxlength="3"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><select>
+                        <option>-</option>
+                        <option>Aprovado</option>
+                        <option>Reprovado</option>
+                </td>
+            </tr>
+            <tr>
+                <td class="left"><input class="number" type="text" value="4" disabled></td>
+                <td><input class="name" placeholder="Atribuir nome do aluno" type="text"></td>
+                <td><input class="matr" value="0000000-X" disabled type="text"></td>
+                <td><input type="date"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" maxlength="3"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><select>
+                        <option>-</option>
+                        <option>Aprovado</option>
+                        <option>Reprovado</option>
+                </td>
+            </tr>
+            <tr>
+                <td class="left"><input class="number" type="text" value="5" disabled></td>
+                <td><input class="name" placeholder="Atribuir nome do aluno" type="text"></td>
+                <td><input class="matr" value="0000000-X" disabled type="text"></td>
+                <td><input type="date"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" maxlength="3"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><select>
+                        <option>-</option>
+                        <option>Aprovado</option>
+                        <option>Reprovado</option>
+                </td>
+            </tr>
+            <tr>
+                <td class="left"><input class="number" type="text" value="6" disabled></td>
+                <td><input class="name" placeholder="Atribuir nome do aluno" type="text"></td>
+                <td><input class="matr" value="0000000-X" disabled type="text"></td>
+                <td><input type="date"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" maxlength="3"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><select>
+                        <option>-</option>
+                        <option>Aprovado</option>
+                        <option>Reprovado</option>
+                </td>
+            </tr>
+            <tr>
+                <td class="left"><input class="number" type="text" value="7" disabled></td>
+                <td><input class="name" placeholder="Atribuir nome do aluno" type="text"></td>
+                <td><input class="matr" value="0000000-X" disabled type="text"></td>
+                <td><input type="date"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" maxlength="3"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><select>
+                        <option>-</option>
+                        <option>Aprovado</option>
+                        <option>Reprovado</option>
+                </td>
+            </tr>
+            <tr>
+                <td class="left"><input class="number" type="text" value="8" disabled></td>
+                <td><input class="name" placeholder="Atribuir nome do aluno" type="text"></td>
+                <td><input class="matr" value="0000000-X" disabled type="text"></td>
+                <td><input type="date"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" maxlength="3"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><select>
+                        <option>-</option>
+                        <option>Aprovado</option>
+                        <option>Reprovado</option>
+                </td>
+            </tr>
+            <tr>
+                <td class="left"><input class="number" type="text" value="9" disabled></td>
+                <td><input class="name" placeholder="Atribuir nome do aluno" type="text"></td>
+                <td><input class="matr" value="0000000-X" disabled type="text"></td>
+                <td><input type="date"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" maxlength="3"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><select>
+                        <option>-</option>
+                        <option>Aprovado</option>
+                        <option>Reprovado</option>
+                </td>
+            </tr>
+            <tr>
+                <td class="left"><input class="number" type="text" value="10" disabled></td>
+                <td><input class="name" placeholder="Atribuir nome do aluno" type="text"></td>
+                <td><input class="matr" value="0000000-X" disabled type="text"></td>
+                <td><input type="date"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" maxlength="3"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><select>
+                        <option>-</option>
+                        <option>Aprovado</option>
+                        <option>Reprovado</option>
+                </td>
+            </tr>
+            <tr>
+                <td class="left"><input class="number" type="text" value="11" disabled></td>
+                <td><input class="name" placeholder="Atribuir nome do aluno" type="text"></td>
+                <td><input class="matr" value="0000000-X" disabled type="text"></td>
+                <td><input type="date"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" maxlength="3"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><select>
+                        <option>-</option>
+                        <option>Aprovado</option>
+                        <option>Reprovado</option>
+                </td>
+            </tr>
+            <tr>
+                <td class="left"><input class="number" type="text" value="12" disabled></td>
+                <td><input class="name" placeholder="Atribuir nome do aluno" type="text"></td>
+                <td><input class="matr" value="0000000-X" disabled type="text"></td>
+                <td><input type="date"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" maxlength="3"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><select>
+                        <option>-</option>
+                        <option>Aprovado</option>
+                        <option>Reprovado</option>
+                </td>
+            </tr>
+            <tr>
+                <td class="left"><input class="number" type="text" value="13" disabled></td>
+                <td><input class="name" placeholder="Atribuir nome do aluno" type="text"></td>
+                <td><input class="matr" value="0000000-X" disabled type="text"></td>
+                <td><input type="date"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" maxlength="3"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><select>
+                        <option>-</option>
+                        <option>Aprovado</option>
+                        <option>Reprovado</option>
+                </td>
+            </tr>
+            <tr>
+                <td class="left"><input class="number" type="text" value="14" disabled></td>
+                <td><input class="name" placeholder="Atribuir nome do aluno" type="text"></td>
+                <td><input class="matr" value="0000000-X" disabled type="text"></td>
+                <td><input type="date"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" maxlength="3"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><select>
+                        <option>-</option>
+                        <option>Aprovado</option>
+                        <option>Reprovado</option>
+                </td>
+            </tr>
+            <tr>
+                <td class="left"><input class="number" type="text" value="15" disabled></td>
+                <td><input class="name" placeholder="Atribuir nome do aluno" type="text"></td>
+                <td><input class="matr" value="0000000-X" disabled type="text"></td>
+                <td><input type="date"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" maxlength="3"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><select>
+                        <option>-</option>
+                        <option>Aprovado</option>
+                        <option>Reprovado</option>
+                </td>
+            </tr>
+            <tr>
+                <td class="left"><input class="number" type="text" value="16" disabled></td>
+                <td><input class="name" placeholder="Atribuir nome do aluno" type="text"></td>
+                <td><input class="matr" value="0000000-X" disabled type="text"></td>
+                <td><input type="date"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" maxlength="3"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><select>
+                        <option>-</option>
+                        <option>Aprovado</option>
+                        <option>Reprovado</option>
+                </td>
+            </tr>
+            <tr>
+                <td class="left"><input class="number" type="text" value="17" disabled></td>
+                <td><input class="name" placeholder="Atribuir nome do aluno" type="text"></td>
+                <td><input class="matr" value="0000000-X" disabled type="text"></td>
+                <td><input type="date"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" maxlength="3"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><select>
+                        <option>-</option>
+                        <option>Aprovado</option>
+                        <option>Reprovado</option>
+                </td>
+            </tr>
+            <tr>
+                <td class="left"><input class="number" type="text" value="18" disabled></td>
+                <td><input class="name" placeholder="Atribuir nome do aluno" type="text"></td>
+                <td><input class="matr" value="0000000-X" disabled type="text"></td>
+                <td><input type="date"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" maxlength="3"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><select>
+                        <option>-</option>
+                        <option>Aprovado</option>
+                        <option>Reprovado</option>
+                </td>
+            </tr>
+            <tr>
+                <td class="left"><input class="number" type="text" value="19" disabled></td>
+                <td><input class="name" placeholder="Atribuir nome do aluno" type="text"></td>
+                <td><input class="matr" value="0000000-X" disabled type="text"></td>
+                <td><input type="date"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" maxlength="3"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><select>
+                        <option>-</option>
+                        <option>Aprovado</option>
+                        <option>Reprovado</option>
+                </td>
+            </tr>
+            <tr>
+                <td class="left"><input class="number" type="text" value="20" disabled></td>
+                <td><input class="name" placeholder="Atribuir nome do aluno" type="text"></td>
+                <td><input class="matr" value="0000000-X" disabled type="text"></td>
+                <td><input type="date"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" maxlength="3"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><select>
+                        <option>-</option>
+                        <option>Aprovado</option>
+                        <option>Reprovado</option>
+                </td>
+            </tr>
+            <tr>
+                <td class="left"><input class="number" type="text" value="21" disabled></td>
+                <td><input class="name" placeholder="Atribuir nome do aluno" type="text"></td>
+                <td><input class="matr" value="0000000-X" disabled type="text"></td>
+                <td><input type="date"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" maxlength="3"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><select>
+                        <option>-</option>
+                        <option>Aprovado</option>
+                        <option>Reprovado</option>
+                </td>
+            </tr>
+            <tr>
+                <td class="left"><input class="number" type="text" value="22" disabled></td>
+                <td><input class="name" placeholder="Atribuir nome do aluno" type="text"></td>
+                <td><input class="matr" value="0000000-X" disabled type="text"></td>
+                <td><input type="date"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" maxlength="3"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><select>
+                        <option>-</option>
+                        <option>Aprovado</option>
+                        <option>Reprovado</option>
+                </td>
+            </tr>
+            <tr>
+                <td class="left"><input class="number" type="text" value="23" disabled></td>
+                <td><input class="name" placeholder="Atribuir nome do aluno" type="text"></td>
+                <td><input class="matr" value="0000000-X" disabled type="text"></td>
+                <td><input type="date"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" maxlength="3"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><select>
+                        <option>-</option>
+                        <option>Aprovado</option>
+                        <option>Reprovado</option>
+                </td>
+            </tr>
+            <tr>
+                <td class="left"><input class="number" type="text" value="24" disabled></td>
+                <td><input class="name" placeholder="Atribuir nome do aluno" type="text"></td>
+                <td><input class="matr" value="0000000-X" disabled type="text"></td>
+                <td><input type="date"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" maxlength="3"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><select>
+                        <option>-</option>
+                        <option>Aprovado</option>
+                        <option>Reprovado</option>
+                </td>
+            </tr>
+            <tr>
+                <td class="left"><input class="number" type="text" value="25" disabled></td>
+                <td><input class="name" placeholder="Atribuir nome do aluno" type="text"></td>
+                <td><input class="matr" value="0000000-X" disabled type="text"></td>
+                <td><input type="date"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" maxlength="3"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><select>
+                        <option>-</option>
+                        <option>Aprovado</option>
+                        <option>Reprovado</option>
+                </td>
+            </tr>
+            <tr>
+                <td class="left"><input class="number" type="text" value="26" disabled></td>
+                <td><input class="name" placeholder="Atribuir nome do aluno" type="text"></td>
+                <td><input class="matr" value="0000000-X" disabled type="text"></td>
+                <td><input type="date"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" maxlength="3"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><select>
+                        <option>-</option>
+                        <option>Aprovado</option>
+                        <option>Reprovado</option>
+                </td>
+            </tr>
+            <tr>
+                <td class="left"><input class="number" type="text" value="27" disabled></td>
+                <td><input class="name" placeholder="Atribuir nome do aluno" type="text"></td>
+                <td><input class="matr" value="0000000-X" disabled type="text"></td>
+                <td><input type="date"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" maxlength="3"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><select>
+                        <option>-</option>
+                        <option>Aprovado</option>
+                        <option>Reprovado</option>
+                </td>
+            </tr>
+            <tr>
+                <td class="left"><input class="number" type="text" value="28" disabled></td>
+                <td><input class="name" placeholder="Atribuir nome do aluno" type="text"></td>
+                <td><input class="matr" value="0000000-X" disabled type="text"></td>
+                <td><input type="date"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" maxlength="3"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><select>
+                        <option>-</option>
+                        <option>Aprovado</option>
+                        <option>Reprovado</option>
+                </td>
+            </tr>
+            <tr>
+                <td class="left"><input class="number" type="text" value="29" disabled></td>
+                <td><input class="name" placeholder="Atribuir nome do aluno" type="text"></td>
+                <td><input class="matr" value="0000000-X" disabled type="text"></td>
+                <td><input type="date"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" maxlength="3"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><select>
+                        <option>-</option>
+                        <option>Aprovado</option>
+                        <option>Reprovado</option>
+                </td>
+            </tr>
+            <tr>
+                <td class="left"><input class="number" type="text" value="30" disabled></td>
+                <td><input class="name" placeholder="Atribuir nome do aluno" type="text"></td>
+                <td><input class="matr" value="0000000-X" disabled type="text"></td>
+                <td><input type="date"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" maxlength="3"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><input class="small" type="number" min="0" max="100"></td>
+                <td><select>
+                        <option>-</option>
+                        <option>Aprovado</option>
+                        <option>Reprovado</option>
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><br><input class="last" type="submit" value="Salvar registro"></td>
+                <td><button onclick="print()" style="margin-bottom: 10px;">Imprimir Relatório</button></td>
+                
+            </tr>
+
+        </table>
+    </div>
+
+    <footer style="background-color: lightgray; position: absolute; width: 100%; text-align: center;">
+        <p>Copyright - Direitos Reservados. Aluno: Marcos Vinicius de Oliveira</p>
+</footer>
+
+</body>
+
+</html>
