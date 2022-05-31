@@ -9,55 +9,46 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Professor - frequência/notas</title>
-<style>
-    
-        /*Configurações do botão de salvar*/
-        .salvar{
-            background-color: red;
-            border: solid 1px black;
-            color: white;
-            font-weight: bold;
-            height: 40px;
-            border-radius: 15px;
-        }
-</style>
-    
+    <title>Professor - Frequência/notas</title>
+
+
 </head>
 
 <header>
-
-    <div class="w3-content" style="max-width:2000px;margin-top:46px">
-
-    <!-- Navbar -->
-    <div class="w3-top" style="display:inline-flex">
-        <div class="w3-bar w3-black w3-card" style="display:inline-flex">
-            <div style="display:inline-flex"><img height="50px" width="100px" src="IMG/Home/DiarioDeClasseLogo.png"></div>
-            <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
-                href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i
-                    class="fa fa-bars"></i></a>
-            <a href="Index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-            <a href="ConteúdoFormativo.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Contéudo Formativo</a>
-            <a href="DiarioGeral.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Diário Geral</a>
-            <a href="ListaPresença.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Lista de Presença</a>
-            <a href="FrequenciaNotas.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Frequência e Notas</a>
-            <a href="SecretariaDigitalProfessor.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Voltar</a>   
-            <a href="ProfessoresCadastro.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Sair</a>
+    <!-- parte superior do site, com as guias das outras paginas -->
+        <!-- Cabeçalho -->
+        <div class="w3-top" style="display:inline-flex">
+            <div class="w3-bar w3-black w3-card" style="display:inline-flex">
+                <div style="display:inline-flex"><img height="55px" width="100px" src="IMG/Home/DiarioDeClasseLogo.png"></div>
+                <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
+                    href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i
+                        class="fa fa-bars"></i></a>
+                <a href="Index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+                <a href="ConteúdoFormativo.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Contéudo
+                    Formativo</a>
+                <a href="DiarioGeral.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Diário Geral</a>
+                <a href="ListaPresença.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Lista de Presença</a>
+                <a href="FrequenciaNotas.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Frequência e
+                    Notas</a>
+                    <a href="SecretariaDigitalProfessor.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Voltar</a>   
+                <a href="ProfessoresCadastro.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Sair</a>
+            </div>
         </div>
-    </div>
-
-    </header>
+</header>
 
 <body>
 
     <div class="center">
+        <!-- div principal onde ficas a ficha -->
         <table>
+            <h2>Frequência e Notas</h2>
+            <!-- divisão da ficha através de tabela -->
             <tr>
-                <td></td>
+                <!-- barra de pesquisa e registro de data -->
                 <td>
-                    <p class="estilo">Procurar aluno:</p>
+                    <p class="estilo">Pesquisa:</p>
                 </td>
-                <td><input class="search" type="search" placeholder="Pesquisar"> </td>
+                <td><input class="search" type="search" placeholder="pesquisar aluno"></td>
                 <td>
                     <p class="estilo">Data do registro:</p>
                 </td>
@@ -65,6 +56,7 @@
             </tr>
 
             <tr>
+                <!-- titutlos das colunas -->
                 <td>
                     <p class="estilo">Numero</p>
                 </td>
@@ -72,13 +64,13 @@
                     <p class="estilo">Nome do Aluno:</p>
                 </td>
                 <td>
-                    <p class="estilo">Numero de Matricula:</p>
+                    <p class="estilo">N° de Matricula:</p>
                 </td>
                 <td>
                     <p class="estilo">Data de Nascimento:</p>
                 </td>
                 <td>
-                    <p class="estilo">Frequência (%):</p>
+                    <p class="estilo">Frequência:</p>
                 </td>
                 <td>
                     <p class="estilo">Faltas</p>
@@ -101,17 +93,19 @@
             </tr>
 
             <tr>
-                <td class="left"><input class="number" type="text" value="1" disabled></td>
-                <td><input class="name" placeholder="Atribuir nome do aluno" type="text"></td>
-                <td><input class="matr" value="0000000-X" disabled type="text"></td>
-                <td><input type="date"></td>
-                <td><input class="small" type="number" min="0" max="100"></td>
-                <td><input class="small" type="number" maxlength="3"></td>
-                <td><input class="small" type="number" min="0" max="100"></td>
-                <td><input class="small" type="number" min="0" max="100"></td>
-                <td><input class="small" type="number" min="0" max="100"></td>
-                <td><input class="small" type="number" min="0" max="100"></td>
+                <!-- linha principal, que foi replicada 30 vezes pra fazer a ficha -->
+                <td class="left"><input class="number" type="text" value="1" disabled></td> <!-- numero de chamada -->
+                <td><input class="name" placeholder="Atribuir nome do aluno" type="text"></td> <!-- nome do aluno -->
+                <td><input class="matr" value="0000000-X" disabled type="text"></td> <!-- numero da matricula -->
+                <td><input type="date"></td> <!-- data de nascimento -->
+                <td><input class="small" type="number" min="0" max="100"></td> <!-- frequencia -->
+                <td><input class="small" type="number" maxlength="3"></td> <!-- faltas -->
+                <td><input class="small" type="number" min="0" max="100"></td> <!-- nota1 -->
+                <td><input class="small" type="number" min="0" max="100"></td> <!-- nota2 -->
+                <td><input class="small" type="number" min="0" max="100"></td> <!-- nota3 -->
+                <td><input class="small" type="number" min="0" max="100"></td> <!-- nota4 -->
                 <td><select>
+                        <!-- seletor, mostra se o aluno foi ou não aprovado -->
                         <option>-</option>
                         <option>Aprovado</option>
                         <option>Reprovado</option>
@@ -612,6 +606,7 @@
             </tr>
 
             <tr>
+                <!-- input de salvar registro, com script de alerta -->
                 <td></td>
                 <td></td>
                 <td></td>
@@ -622,19 +617,35 @@
                 <td></td>
                 <td></td>
                 <td></td>
-                <td><br><input class="salvar" onclick="Evento()" type="submit" value="Salvar registro"></td>
+                <td><br><input onclick="Evento()" class="last" type="submit" value="Salvar Registro"></td>
                 <script>
                     function Evento() {
                         alert('Seu Registro foi salvo!')
                     }
                 </script>
             </tr>
+            <tr>
+                <!-- input com função de imprimir -->
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><input type="button" value="Imprimir" class="last" onclick="print()"></td>
+            </tr>
+
         </table>
     </div>
 
+    <!-- footer basicão -->
     <footer style="background-color: lightgray; position: absolute; width: 100%; text-align: center;">
         <p>Copyright - Direitos Reservados. Aluno: Marcos Vinicius de Oliveira</p>
-</footer>
+    </footer>
 
 </body>
 
