@@ -7,5 +7,4 @@ The website is divided in home page, students secction and teachers section
 
 The most part of the styles has been done in the own HTML files.
 
-https://ptorini1.github.io/DiarioDeClasse/index.html
-
+https://ptorini1.github.io/class-diary-website/
